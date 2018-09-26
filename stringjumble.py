@@ -42,7 +42,11 @@ for i in text[::-1]:
         wordlist.append(word)
         word=""
 wordlist.append(word)
-print(wordlist)
+#print(wordlist)
+output=""
+for i in wordlist:
+    output += i + " "
+print(output)
 
 #words correct, letters reversed
 wordlist=[]
@@ -54,4 +58,8 @@ for i in text:
         wordlist.append(word)
         word=""
 wordlist.append(word)
-print(wordlist)
+
+output=""
+for i in wordlist:
+    output += i + " "
+print(output)
