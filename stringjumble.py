@@ -28,9 +28,11 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 
 text=input("Please enter a string of text (the bigger the better) : ")
 print("You entered " +text+ ". Now jumble it: ")
+
+#letters in reverse
 print(text[::-1])
 
-
+#words in reverse, letters correct order
 wordlist=[]
 word=""
 for i in text[::-1]:
@@ -40,9 +42,16 @@ for i in text[::-1]:
         wordlist.append(word)
         word=""
 wordlist.append(word)
-print(wordlist[:])
+print(wordlist)
 
-for i in text[::-1]:
-    if 
-
-
+#words correct, letters reversed
+wordlist=[]
+word=""
+for i in text:
+    if i!=" ":
+        word=i+word
+    if i==" ":
+        wordlist.append(word)
+        word=""
+wordlist.append(word)
+print(wordlist)
